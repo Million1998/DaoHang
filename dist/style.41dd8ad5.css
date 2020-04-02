@@ -1,0 +1,136 @@
+*{box-sizing: border-box;}
+*{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color:inherit;}
+
+body{
+    background-color: #eeeeee;
+}
+
+.globalHeader{
+   margin: 20px;
+}
+@media (min-width: 500px){
+    .globalHeader{
+        margin: 60px 0 100px;
+    }
+}
+.globalHeader > form{
+    display:flex;
+    justify-content:space-between;
+}
+@media (min-width: 500px){
+    .globalHeader > form{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.globalHeader > form > input{
+    width: 100%;
+    margin-right: 10px;
+    height: 40px;
+    padding-left: 6px;
+    border:1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.globalHeader > form > button{
+    white-space: nowrap;
+    padding: 0 26px;
+    border:1px solid #dddddd;
+    border-radius: 4px;
+    background: #0282B9;
+    color: white;
+    font-size: 16px;
+}
+
+.globalMain{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.globalMain .siteList{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-between;
+}
+@media(min-width:500px){
+    .globalMain .siteList{
+        margin-left: 0px;
+        margin-right: -25px;
+        justify-content: start;
+    }
+}
+.globalMain .site{
+    border: 1px solid #ddd;
+    width: 160px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+    
+}
+@media(min-width:500px){
+    .globalMain .site{
+        margin-right: 25px;
+        cursor: pointer;
+    }
+}
+.globalMain .logo{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+.globalMain .link{
+    font-size: 12px;
+}
+.globalMain .close{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    
+}
+@media (min-width:500px){
+    .globalMain .close{
+        display: none;
+        cursor: default;
+    }
+    .globalMain .site:hover .close{
+        display: block;
+    }
+}
+
+.globalMain .addButton{
+    width: 160px;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.globalMain .addButton .addButton-text{
+    font-size: 12px;
+}
+.globalMain .addButton .icon{
+    width: 64px;
+    height: 64px;
+}
+
+/*# sourceMappingURL=style.41dd8ad5.css.map */
